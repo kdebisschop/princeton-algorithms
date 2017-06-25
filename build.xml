@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="checkstyle"
+  name="algorithms-week1">
+
+  <taskdef
+    resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
+    classpath="lib/checkstyle-7.8.2-all.jar"/>
+
+  <target description="Generates a report of code convention violations."
+    name="checkstyle">
+    <!-- See http://checkstyle.sourceforge.net/anttask.html for full options of using checkstyle with ant-->
+    <checkstyle config="checkstyle.xml"
+      failOnViolation="false"
+      failureProperty="checkstyle.failure">
+      <formatter tofile="checkstyle_report.xml" type="xml"/>
+      <fileset dir="src" includes="**/*.java"/>
+    </checkstyle>
+  </target>
+</project>
