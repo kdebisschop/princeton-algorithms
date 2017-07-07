@@ -4,7 +4,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import edu.princeton.cs.algs4.In;
 import java.util.Iterator;
 import net.debisschop.algorithms.performance.TimingExtension;
 import org.junit.jupiter.api.DisplayName;
@@ -27,19 +26,19 @@ class BoardTest {
       board = new Board(new int[1][1]);
       assertThat(board.dimension(), is(1));
 
-      board = readBoard("puzzle2x2-00");
+      board = Helper.readBoard("puzzle2x2-00");
       assertThat(board.dimension(), is(2));
 
       board = new Board(new int[2][2]);
       assertThat(board.dimension(), is(2));
 
-      board = readBoard("puzzle3x3-00");
+      board = Helper.readBoard("puzzle3x3-00");
       assertThat(board.dimension(), is(3));
 
       board = new Board(new int[3][3]);
       assertThat(board.dimension(), is(3));
 
-      board = readBoard("puzzle4x4-00");
+      board = Helper.readBoard("puzzle4x4-00");
       assertThat(board.dimension(), is(4));
 
       board = new Board(new int[4][4]);
@@ -240,15 +239,5 @@ class BoardTest {
     void isGoal64() { isGoal(64); }
   }
 
-  private Board readBoard(String file) {
-    In in = new In("test/net/debisschop/algorithms/puzzle8/" + file + ".txt");
-    int n = in.readInt();
-    int[][] tiles = new int[n][n];
-    for (int i = 0; i < n; i++) {
-      for (int j = 0; j < n; j++) {
-        tiles[i][j] = in.readInt();
-      }
-    }
-    return new Board(tiles);
-  }
+
 }
