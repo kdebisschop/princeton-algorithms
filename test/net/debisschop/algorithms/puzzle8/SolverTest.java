@@ -1,10 +1,12 @@
+package net.debisschop.algorithms.puzzle8;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.jupiter.api.Assertions.*;
 
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
-import java.util.Iterator;
+import net.debisschop.algorithms.puzzle8.Board;
+import net.debisschop.algorithms.puzzle8.Solver;
 import org.junit.jupiter.api.Test;
 
 class SolverTest {

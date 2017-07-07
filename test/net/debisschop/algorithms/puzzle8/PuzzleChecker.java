@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Compilation:  javac PuzzleChecker.java
  *  Execution:    java PuzzleChecker filename1.txt filename2.txt ...
- *  Dependencies: Board.java Solver.java
+ *  Dependencies: net.debisschop.algorithms.puzzle8.Board.java net.debisschop.algorithms.puzzle8.Solver.java
  *
  *  This program creates an initial board from each filename specified
  *  on the command line and finds the minimum number of moves to
@@ -26,7 +26,7 @@
  ******************************************************************************/
 
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
+import net.debisschop.algorithms.puzzle8.Board;
 
 public class PuzzleChecker {
 
@@ -47,7 +47,7 @@ public class PuzzleChecker {
 
             // solve the slider puzzle
             Board initial = new Board(tiles);
-            //Solver solver = new Solver(initial);
+            //net.debisschop.algorithms.puzzle8.Solver solver = new net.debisschop.algorithms.puzzle8.Solver(initial);
             //StdOut.println(filename + ": " + solver.moves());
         }
     }

@@ -1,3 +1,5 @@
+package net.debisschop.algorithms.puzzle8;
+
 import java.util.Arrays;
 import java.util.Stack;
 

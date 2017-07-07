@@ -1,3 +1,5 @@
+package net.debisschop.algorithms.performance;
+
 import java.lang.reflect.Method;
 import java.util.logging.Logger;
 

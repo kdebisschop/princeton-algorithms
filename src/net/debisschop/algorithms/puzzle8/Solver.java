@@ -1,6 +1,9 @@
+package net.debisschop.algorithms.puzzle8;
+
 import edu.princeton.cs.algs4.MinPQ;
 import edu.princeton.cs.algs4.Stack;
 import java.util.Comparator;
+import net.debisschop.algorithms.puzzle8.Board;
 
 public class Solver {
 
